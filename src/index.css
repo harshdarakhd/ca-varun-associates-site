@@ -118,3 +118,11 @@ main {
 .home .for_home, .services .for_services, .contactus .for_contact_us, .aboutus .for_about_us {
   background-color: rgb(79, 240, 240);
 }
+
+body {
+  margin: 0;
+  font-family: "Raleway", serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(to left, rgb(208, 201, 221), rgb(219, 213, 235));
+}
