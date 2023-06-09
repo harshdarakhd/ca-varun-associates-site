@@ -85,8 +85,8 @@ function Navbar() {
   }
 
   return (
-    <div className='nav'>
-      <ul className='flex justify-between w-[450px] mx-auto'>
+    <div className='nav flex'>
+      <ul className='nav flex justify-between w-[450px] mx-auto'>
         <li>
           <Link to='/home' className={linkClasses("home")}
           // 'hover:text-blue-500 for_home'
