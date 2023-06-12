@@ -102,7 +102,7 @@ li.active {
 }
 
 li:hover {
-  background-color: #d3d3d3;
+  background-color: 'bg-teal-900';
 }
 
 main {
