@@ -32,8 +32,10 @@ function AboutCard() {
       >
         <Meta title="Know More" 
         description={
-          // <a href="your-link-here">Click Here</a>
+          <div style={{ display: 'flex', justifyContent: 'center', marginTop: '2px' }}>
+          {/* // <a href="your-link-here">Click Here</a> */}
           <Link to='https://www.linkedin.com/in/harsh-d-07a873124' target="_blank"><AiFillLinkedin style={{ fontSize: "30px", justifyContent:'center'}}/></Link>
+          </div>
       }
           style={{ marginTop: "20px"}}/>
       </Card>
@@ -53,8 +55,10 @@ function AboutCard() {
       >
        <Meta title="Know More" 
         description={
-          // <a href="your-link-here">Click Here</a>
+          <div style={{ display: 'flex', justifyContent: 'center', marginTop: '2px' }}>
+          {/* <a href="your-link-here">Click Here</a> */}
           <Link to='https://www.linkedin.com/in/harsh-d-07a873124' target="_blank"><AiFillLinkedin style={{ fontSize: "30px", justifyContent:'center'}}/></Link>
+          </div>
       }
           style={{ marginTop: "20px" }}/>
       </Card>
