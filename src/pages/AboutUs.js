@@ -5,7 +5,7 @@ import TypeWriter from '../components/TypeWriter'
 
 const AboutUstext = () => {
   return (
-    <div> 
+    <div>
       WE ARE A TEAM OF PROFESSIONALS WHO ARE PASSIONATE ABOUT WHAT WE DO 
       <br/>AND OUR CULTURE OF EXCELLENCE IS THE MAJOR FACTOR THAT SEPARATES US FROM OTHER FIRMS.
     </div>
