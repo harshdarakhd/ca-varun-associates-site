@@ -1,6 +1,6 @@
 import React from 'react'
 import { Divider } from 'antd'
-import MediaCard from '../components/Cards'
+import AboutCard from '../components/AboutCards'
 import TypeWriter from '../components/TypeWriter'
 
 const AboutUstext = () => {
@@ -19,7 +19,7 @@ function AboutUs() {
         <TypeWriter />
         </Divider>
       <AboutUstext />
-      <MediaCard />
+      <AboutCard />
   </div>
   )
 }

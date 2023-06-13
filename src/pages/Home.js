@@ -1,10 +1,4 @@
 import React from 'react';
-import { Link, useParams } from 'react-router-dom';
-import AboutUs from './AboutUs';
-import ContactUs from './ContactUs';
-import Services from './Services';
-import MediaCard from '../components/Cards';
-import TypeWriter from '../components/TypeWriter';
 
 
 const Hometext = () => {

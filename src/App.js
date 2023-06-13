@@ -6,6 +6,10 @@ import About from "./pages/AboutUs";
 import Contact from "./pages/ContactUs";
 import Services from "./pages/Services";
 import { NavLink } from 'react-router-dom';
+import ServicesCard from './components/ServicesCards';
+import DirectandIndirectTaxation from './InfoPages/DirectandIndirectTaxation';
+import AuditandAssurance from './InfoPages/AuditandAssurance';
+import ManagementConsultancy from './InfoPages/ManagementConsultancy';
 
 
 function App() {
@@ -20,6 +24,9 @@ function App() {
           <Route exact path='/services' element={<Services />} />
           <Route exact path='/about' element={<About />} />
           <Route exact path='/contact' element={<Contact />} />
+          <Route path='/Tax' element={<DirectandIndirectTaxation />} />
+          <Route path='/audit' element={<AuditandAssurance />} />
+          <Route path='/management' element={<ManagementConsultancy />} />
         </Routes>
       </Router>
     </div>
