@@ -6,7 +6,7 @@ function Navbar() {
 
     function linkClasses(path) {
         const isActive = location.pathname === path;
-        return `rounded-full px-2 py-3 ${
+        return `rounded-full px-3 py-3 ${
             isActive ? "bg-teal-600 text-white" : "bg-gray-200"
         } hover:bg-teal-600 hover:text-white`;
     }
@@ -37,7 +37,7 @@ function Navbar() {
         //   </ul>
         // </div>
         <div className="bg-[#D2E9E9] p-5">
-            <ul className="flex justify-center space-x-8">
+            <ul className="flex justify-center space-x-7">
                 <li className="sm:text-sm text-center">
                     <Link to="/" className={linkClasses("/")}>
                         Home

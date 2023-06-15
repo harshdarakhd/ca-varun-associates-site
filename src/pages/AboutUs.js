@@ -5,20 +5,21 @@ import TypeWriter from '../components/TypeWriter'
 
 const AboutUstext = () => {
   return (
-    <div>
+    <div className="flex flex-col items-center p-2">
       WE ARE A TEAM OF PROFESSIONALS WHO ARE PASSIONATE ABOUT WHAT WE DO 
-      <br/>AND OUR CULTURE OF EXCELLENCE IS THE MAJOR FACTOR THAT SEPARATES US FROM OTHER FIRMS.
+      <p>AND OUR CULTURE OF EXCELLENCE IS THE MAJOR FACTOR THAT SEPARATES US FROM OTHER FIRMS.
+      </p>
     </div>
   )
 }
 
 function AboutUs() {
   return (
-    <div style={{ padding: 50, textAlign: "center" }}>
+    <div className="flex flex-col items-center p-10">
       <Divider>
         <TypeWriter />
         </Divider>
-      <AboutUstext />
+        <AboutUstext />
       <AboutCard />
   </div>
   )
