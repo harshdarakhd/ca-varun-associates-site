@@ -40,7 +40,7 @@ function ServicesCard() {
                             className="w-[60%] rounded-md mt-2 mx-auto"
                             src={item.image}
                         />
-                        <p className="mt-4 font-sans text-center">Know More</p>
+                        <p className="mt-4 font-sans text-center">To Know More</p>
                         <Link
                             to="/Tax"
                             className="text-blue-500 underline mt-2 text-center"
