@@ -34,7 +34,7 @@ function ServicesCard() {
         <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1">
             {data.map((item) => {
                 return (
-                    <div className="flex flex-col mx-5 my-10 border-2 p-3 bg-[#D2E9E9] ">
+                    <div className="md:w-[475px] flex flex-col mx-5 my-10 border-2 p-3 bg-[#D2E9E9] ">
                         <h1 className="text-lg text-center font-semibold">{item.title}</h1>
                         <img
                             className="w-[60%] rounded-md mt-2 mx-auto"
