@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/ca-varun-associates-site/static/css/main.f24b0aa8.css",
-    "main.js": "/ca-varun-associates-site/static/js/main.d2c19125.js",
+    "main.css": "/ca-varun-associates-site/static/css/main.ce73b172.css",
+    "main.js": "/ca-varun-associates-site/static/js/main.93a29411.js",
     "static/media/Audit.jpg": "/ca-varun-associates-site/static/media/Audit.c4395c7e65309ea64f46.jpg",
     "static/media/Management.jpg": "/ca-varun-associates-site/static/media/Management.dd13b37bd5359e8080ba.jpg",
     "static/media/Tax.png": "/ca-varun-associates-site/static/media/Tax.dddc89995418ca77b03e.png",
     "static/media/WhatsApp Image 2022-09-12 at 3.37.38 PM.jpeg": "/ca-varun-associates-site/static/media/WhatsApp Image 2022-09-12 at 3.37.38 PM.184a10b184262b24c0b0.jpeg",
     "index.html": "/ca-varun-associates-site/index.html",
-    "main.f24b0aa8.css.map": "/ca-varun-associates-site/static/css/main.f24b0aa8.css.map",
-    "main.d2c19125.js.map": "/ca-varun-associates-site/static/js/main.d2c19125.js.map"
+    "main.ce73b172.css.map": "/ca-varun-associates-site/static/css/main.ce73b172.css.map",
+    "main.93a29411.js.map": "/ca-varun-associates-site/static/js/main.93a29411.js.map"
   },
   "entrypoints": [
-    "static/css/main.f24b0aa8.css",
-    "static/js/main.d2c19125.js"
+    "static/css/main.ce73b172.css",
+    "static/js/main.93a29411.js"
   ]
 }
