@@ -11,129 +11,45 @@ import { Link } from "react-router-dom";
 
 const { Meta } = Card;
 
+const data = [
+    {
+        id: 1,
+        title: "Audit and Assurance",
+        image: AuditLogo,
+    },
+    {
+        id: 2,
+        title: "Direct and Indirect Taxation",
+        image: TaxLogo,
+    },
+    {
+        id: 3,
+        title: "Management Consultancy",
+        image: ManagementLogo,
+    },
+];
+
 function ServicesCard() {
     return (
-        <div>
-            <Card
-                title={<h1 style={{ fontSize: 24 }}>Audit and Assurance</h1>}
-                hoverable
-                style={{
-                    width: 420,
-                    height: 510,
-                    margin: 50,
-                    textAlign: "center",
-                    padding: 30,
-                    //   borderRadius: 75,
-                    backgroundColor: "#D2E9E9",
-                    display: "inline-grid",
-                }}
-                // cover={<Tilt><img alt="example" src={AuditLogo} /></Tilt>}
-            >
-                <Tilt>
-                    <div
-                        style={{
-                            display: "flex",
-                            justifyContent: "center",
-                            alignItems: "center",
-                        }}
-                    >
+        <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 mt-10">
+            {data.map((item) => {
+                return (
+                    <div className="md:w-[475px] flex flex-col mx-5 my-10 border-2 p-3 bg-[#D2E9E9] ">
+                        <h1 className="text-lg text-center font-semibold">{item.title}</h1>
                         <img
-                            alt="example"
-                            src={AuditLogo}
-                            style={{ maxWidth: "100%", maxHeight: "100%" }}
+                            className="w-[60%] rounded-md mt-2 mx-auto"
+                            src={item.image}
                         />
+                        <p className="mt-4 font-sans text-center">To Know More</p>
+                        <Link
+                            to="/Tax"
+                            className="text-blue-500 underline mt-2 text-center"
+                        >
+                            Click Here
+                        </Link>
                     </div>
-                </Tilt>
-                <Meta
-                    title="To Know More"
-                    description={
-                        <Link to='/audit'>Click Here</Link>
-                    }
-                    style={{ marginTop: "20px" }}
-                />
-            </Card>
-            <Card
-                title={
-                    <h1 style={{ fontSize: 24 }}>
-                        Direct and Indirect Taxation
-                    </h1>
-                }
-                hoverable
-                style={{
-                    width: 420,
-                    height: 510,
-                    margin: 50,
-                    textAlign: "center",
-                    padding: 30,
-                    // borderRadius: 75,
-                    backgroundColor: "#D2E9E9",
-                    display: "inline-grid",
-                }}
-                // cover={<Tilt><img alt="example" src={TaxLogo} /></Tilt>}
-            >
-                <Tilt>
-                    <div
-                        style={{
-                            display: "flex",
-                            justifyContent: "center",
-                            alignItems: "center",
-                        }}
-                    >
-                        <img
-                            alt="example"
-                            src={TaxLogo}
-                            style={{ maxWidth: "100%", maxHeight: "100%" }}
-                        />
-                    </div>
-                </Tilt>
-                <Meta
-                    title="To Know More"
-                    description={
-                        // <a href="your-link-here">Click Here</a>
-                        <Link to='/Tax'>Click Here</Link>
-                    }
-                    style={{ marginTop: "20px" }}
-                />
-            </Card>
-            <Card
-                title={<b style={{ fontSize: 24 }}>Management Consultancy</b>}
-                hoverable
-                style={{
-                    width: 420,
-                    height: 510,    
-                    margin: 50,
-                    textAlign: "center",
-                    padding: 30,
-                    // borderRadius: 75,
-                    backgroundColor: "#D2E9E9",
-                    display: "inline-grid",
-                }}
-                // cover={<Tilt><img alt="example" src={ManagementLogo} /></Tilt>}
-            >
-                <Tilt>
-                    <div
-                        style={{
-                            display: "flex",
-                            justifyContent: "center",
-                            alignItems: "center",
-                        }}
-                    >
-                        <img
-                            alt="example"
-                            src={ManagementLogo}
-                            style={{ display: "flex", maxWidth: "100%", maxHeight: "100%" }}
-                        />
-                    </div>
-                </Tilt>
-                <Meta
-                    title="To Know More"
-                    description={
-                        // <a href="your-link-here">Click Here</a>
-                        <Link to='/management'>Click Here</Link>
-                    }
-                    style={{ marginTop: "20px" }}
-                />
-            </Card>
+                );
+            })}
         </div>
     );
 }
