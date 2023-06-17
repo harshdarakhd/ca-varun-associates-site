@@ -31,7 +31,7 @@ const data = [
 
 function ServicesCard() {
     return (
-        <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1">
+        <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 mt-10">
             {data.map((item) => {
                 return (
                     <div className="md:w-[475px] flex flex-col mx-5 my-10 border-2 p-3 bg-[#D2E9E9] ">

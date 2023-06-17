@@ -12,7 +12,7 @@ function Services() {
 
         // </div>
         <div className="flex flex-col items-center">
-            <h1 className="mt-8 underline md:text-4xl 2xl"><b>OUR SERVICES</b></h1>
+            <h1 className="mt-10 underline md:text-4xl 2xl"><b>OUR SERVICES</b></h1>
             <ServicesCard />
         </div>
     );
