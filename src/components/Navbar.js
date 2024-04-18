@@ -45,12 +45,12 @@ function Navbar() {
                 </li>
                 <li className="sm:text-sm text-center">
                     <Link to="/services" className={linkClasses("/services")}>
-                        Services
+                       Our Services
                     </Link>
                 </li>
                 <li className="sm:text-sm text-center">
                     <Link to="/about" className={linkClasses("/about")}>
-                        About
+                        About Us
                     </Link>
                 </li>
                 <li className="sm:text-sm text-center">
