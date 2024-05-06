@@ -1,6 +1,8 @@
 import React from "react";
 import { Card } from "antd";
-import logo from "../Images/WhatsApp Image 2022-09-12 at 3.37.38 PM.jpeg";
+import varun from "../Images/VarunD.png";
+import jayesh from "../Images/JayeshA.png";
+import krishna from "../Images/Krishna.png";
 import Tilt from "react-parallax-tilt";
 import { Link } from "react-router-dom";
 import {
@@ -16,21 +18,28 @@ const data = [
     {
         id: 1,
         title: "ABOUT ME",
-        image: logo,
+        image: varun,
+        // text color black
+        description: "",
     },
     {
         id: 2,
         title: "ABOUT ME",
-        image: logo,
+        image: jayesh,
     },
+    {
+        id: 3,
+        title: "ABOUT ME",
+        image: krishna,
+    }
 ];
 
 function AboutCard() {
     return (
-        <div className="grid mx-auto md:grid-cols-2 sm:grid-cols-2 grid-cols-1">
+        <div className="grid mx-auto md:grid-cols-3 sm:grid-cols-3 grid-cols-3">
             {data.map((item) => {
                 return (
-                    <div className="md:w-[475px] flex flex-col mx-5 my-10 border-2 rounded-md p-3 bg-[#D2E9E9]">
+                    <div className="md:w-[475px] flex flex-col mx-5 my-10 border-2 rounded-md p-3 bg-[#FFFFFF]">
                         <h1 className="text-lg text-center font-semibold">
                             {item.title}
                         </h1>
@@ -40,7 +49,7 @@ function AboutCard() {
                         />
                         <p className="mt-4 font-sans text-center justify-center">Know More
                         <div className="flex justify-center mt-2">
-                        <Link to="https://www.linkedin.com/in/harsh-d-07a873124" target="_blank">
+                        <Link to="https://www.linkedin.com/in/ca-varun-darak-adal/" target="_blank">
                             <AiFillLinkedin
                                 style={{
                                     fontSize: "30px",

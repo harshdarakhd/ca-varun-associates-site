@@ -14,19 +14,44 @@ const { Meta } = Card;
 const data = [
     {
         id: 1,
-        title: "Audit and Assurance",
-        image: AuditLogo,
+        title: "DIRECT TAXTATION",
+        image: ManagementLogo,
     },
     {
         id: 2,
-        title: "Direct and Indirect Taxation",
-        image: TaxLogo,
+        title: "INDIRECT TAXATION",
+        image: ManagementLogo,
     },
     {
         id: 3,
-        title: "Management Consultancy",
+        title: "INTERNATIONAL TAXATION",
         image: ManagementLogo,
     },
+    {
+        id: 3,
+        title: "TRANSACTION ADVISORY",
+        image: ManagementLogo,
+    },
+    {
+        id: 4,
+        title: "BUSINESS REGISTRATION SERVICES",
+        image: ManagementLogo,
+    },
+    {
+        id: 5,
+        title: "BUSINESS SUPPORT SERVICES",
+        image: ManagementLogo,
+    },
+    {
+        id: 6,
+        title: "RISK ADVISORY SERVICES",
+        image: ManagementLogo,
+    },
+    {
+        id : 7,
+        title : "ASSURANCE SERVICE",
+        image : ManagementLogo
+    }
 ];
 
 function ServicesCard() {
@@ -34,18 +59,18 @@ function ServicesCard() {
         <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 mt-10">
             {data.map((item) => {
                 return (
-                    <div className="md:w-[475px] flex flex-col mx-5 my-10 border-2 p-3 bg-[#D2E9E9] ">
+                    <div className="md:w-[425px] flex flex-col mx-5 my-10 border-2 p-3 bg-[#FFFFFF] ">
                         <h1 className="text-lg text-center font-semibold">{item.title}</h1>
                         <img
                             className="w-[60%] rounded-md mt-2 mx-auto"
                             src={item.image}
                         />
-                        <p className="mt-4 font-sans text-center">To Know More</p>
+                        {/* <p className="mt-4 font-sans text-center">To Know More</p> */}
                         <Link
-                            to="/Tax"
-                            className="text-blue-500 underline mt-2 text-center"
+                            to={`/services/${item.title}`}
+                            className="text-black-500 mt-2 text-center hover:text-gray-500"
                         >
-                            Click Here
+                            Read More
                         </Link>
                     </div>
                 );
