@@ -9,9 +9,16 @@ import Careers from "./pages/Careers";
 import { NavLink } from "react-router-dom";
 import ServicesCard from "./components/ServicesCards";
 import DirectandIndirectTaxation from "./InfoPages/DirectandIndirectTaxation";
-import AuditandAssurance from "./InfoPages/AuditandAssurance";
-import ManagementConsultancy from "./InfoPages/TransactionAdvisory";
-import TransactionAdvisory from "./InfoPages/TransactionAdvisory";
+import AuditandAssurance from "./InfoPages/Assurance";
+import ManagementConsultancy from "./InfoPages/RiskAdvisoryServices";
+import TransactionAdvisory from "./InfoPages/RiskAdvisoryServices";
+import BusinessRegistrationService from "./InfoPages/BusinessRegistrationService";
+import DirectTaxation from "./InfoPages/DirectTaxation";
+import InternationalTaxation from "./InfoPages/InternationalTaxation";
+import IndirectTaxation from "./InfoPages/IndirectTaxation";
+import BusinessSupportServices from "./InfoPages/BusinessSupportServices";
+import RiskAdvisoryServices from "./InfoPages/RiskAdvisoryServices";
+import Assurance from "./InfoPages/Assurance";
 
 function App() {
     return (
@@ -25,18 +32,34 @@ function App() {
                     <Route exact path="/about" element={<About />} />
                     <Route exact path="/contact" element={<Contact />} />
                     <Route exact path="/careers" element={<Careers />} />
-                    {/* <Route
-                        path="/services/Direct and Indirect Taxation"
-                        element={<DirectandIndirectTaxation />}
+                    <Route
+                        path="/services/Direct Taxation"
+                        element={<DirectTaxation/>}
                     />
                     <Route
-                        path="/services/Audit and Assurance"
-                        element={<AuditandAssurance />}
+                        path="/services/Indirect Taxation"
+                        element={<IndirectTaxation />}
                     />
                     <Route
-                        path="/services/Transaction Advisory"
-                        element={<TransactionAdvisory />}
-                    /> */}
+                        path="/services/International Taxation"
+                        element={<InternationalTaxation />}
+                    />
+                    <Route
+                        path="/services/Business Support Services"
+                        element={<BusinessSupportServices />}
+                    />
+                    <Route
+                        path="/services/Risk Advisory Services"
+                        element={<RiskAdvisoryServices />}
+                    />
+                    <Route
+                        path="/services/Business Registration Services"
+                        element={<BusinessRegistrationService/>}
+                    />
+                    <Route
+                        path="/services/Assurance Service"
+                        element={<Assurance />}
+                    />
                 </Routes>
             </Router>
         </div>

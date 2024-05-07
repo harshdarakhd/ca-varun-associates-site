@@ -24,7 +24,7 @@ function Careers() {
             Our goal at ADAL ASSOCIATES LLP is to build a team of individuals with competence, integrity, a 
             passion for excellence, a desire to learn, a willingness to work hard, and more importantly, 
             deep respect for their own commitments. A healthy work ethic and meritocracy, which rewards 
-            superior performance faster than expected, will reward them in return. HGM & Co LLP offers a 
+            superior performance faster than expected, will reward them in return. ADAL ASSOCIATES LLP offers a 
             challenging, stimulating and professional work environment where you will be an integral part 
             of the team. We offer an exciting opportunity for you to grow on both a professional and 
             personal level.

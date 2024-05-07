@@ -14,7 +14,7 @@ const { Meta } = Card;
 const data = [
     {
         id: 1,
-        title: "DIRECT TAXTATION",
+        title: "DIRECT TAXATION",
         image: ManagementLogo,
     },
     {
@@ -25,11 +25,6 @@ const data = [
     {
         id: 3,
         title: "INTERNATIONAL TAXATION",
-        image: ManagementLogo,
-    },
-    {
-        id: 3,
-        title: "TRANSACTION ADVISORY",
         image: ManagementLogo,
     },
     {
