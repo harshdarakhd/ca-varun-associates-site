@@ -124,6 +124,7 @@ main {
   font-family: "Raleway", serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; */
-  background-color: #E3F4F4; 
+  background-color: #ffffff; 
+  /* font-family: 'Times New Roman', Times, Verdana, Tahoma, sans-serif; */
   /* background-image: linear-gradient(to left, rgb(208, 201, 221), rgb(219, 213, 235)); */
 } 
