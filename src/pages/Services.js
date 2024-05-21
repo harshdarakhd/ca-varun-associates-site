@@ -1,6 +1,13 @@
 import { Divider } from "antd";
 import React, { useEffect } from "react";
 import ServicesCard from "../components/ServicesCards";
+import Audit from "../InfoPages/Audit";
+import DirectTaxation from "../InfoPages/DirectTaxation";
+import BusinessRegistration from "../InfoPages/BusinessRegistration";
+import BusinessSupport from "../InfoPages/BusinessSupport";
+import InternationalTaxation from "../InfoPages/InternationalTaxation";
+import RiskAdvisoryServices from "../InfoPages/RiskAdvisoryServices";
+import IndirectTaxation from "../InfoPages/IndirectTaxation";
 
 function Services() {
     useEffect(() => {
@@ -16,8 +23,14 @@ function Services() {
 
         // </div>
         <div className="flex flex-col items-center">
-            <h1 className="mt-40 md:text-5xl 2xl"><b>OUR SERVICES</b></h1>
-            <ServicesCard />
+            <h1 className="mt-20 md:text-5xl 2xl"><b><br/>OUR SERVICES</b></h1>
+            <DirectTaxation/>
+            <Audit/>
+            <IndirectTaxation/>
+            <BusinessRegistration/>
+            <BusinessSupport/>
+            <InternationalTaxation/>
+            <RiskAdvisoryServices/>
         </div>
     );
 }

@@ -1,51 +1,51 @@
 import React from "react";
 import { Card } from "antd";
-import AuditLogo from "../assets/Audit.jpg";
-import TaxLogo from "../assets/Tax.png";
-import ManagementLogo from "../assets/Management.jpg";
-import { Divider } from "antd";
-import DirectandIndirectTaxation from "../InfoPages/DirectandIndirectTaxation";
-
-import Tilt from "react-parallax-tilt";
 import { Link } from "react-router-dom";
+import Audit from "../assets/ServicesImages/Audit.jpg";
+import BusinessRegistration from "../assets/ServicesImages/BusinessRegistration.jpg";
+import BusinessSupport from "../assets/ServicesImages/BusinessSupport.jpg";
+import DirectTax from "../assets/ServicesImages/DirectTax.png";
+import GST from "../assets/ServicesImages/GST.png";
+import InternationalTax from "../assets/ServicesImages/InternationaTax.jpg";
+import RiskAdvisory from "../assets/ServicesImages/RiskAdvisory.jpg";
 
 const { Meta } = Card;
 
 const data = [
     {
         id: 1,
-        title: "DIRECT TAXATION",
-        image: ManagementLogo,
+        title: "Audit",
+        image: Audit,
     },
     {
         id: 2,
-        title: "INDIRECT TAXATION",
-        image: ManagementLogo,
+        title: "Business Registration",
+        image: BusinessRegistration,
     },
     {
         id: 3,
-        title: "INTERNATIONAL TAXATION",
-        image: ManagementLogo,
+        title: "Business Support",
+        image: BusinessSupport,
     },
     {
         id: 4,
-        title: "BUSINESS REGISTRATION SERVICES",
-        image: ManagementLogo,
+        title: "Direct Tax",
+        image: DirectTax,
     },
     {
         id: 5,
-        title: "BUSINESS SUPPORT SERVICES",
-        image: ManagementLogo,
+        title: "GST",
+        image: GST,
     },
     {
         id: 6,
-        title: "RISK ADVISORY SERVICES",
-        image: ManagementLogo,
+        title: "International Tax",
+        image: InternationalTax,
     },
     {
         id : 7,
-        title : "ASSURANCE SERVICE",
-        image : ManagementLogo
+        title : "Risk Advisory",
+        image : RiskAdvisory
     }
 ];
 
@@ -54,7 +54,7 @@ function ServicesCard() {
         <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 mt-10">
             {data.map((item) => {
                 return (
-                    <div className="md:w-[425px] flex flex-col mx-5 my-10 border-2 p-3 bg-[#FFFFFF] ">
+                    <div className="md:w-[375px] flex flex-col mx-5 my-10 border-2 p-3 bg-[#FFFFFF] ">
                         <h1 className="text-lg text-center font-semibold">{item.title}</h1>
                         <img
                             className="w-[60%] rounded-md mt-2 mx-auto"

@@ -113,15 +113,16 @@ function ContactUs() {
                 </h2>
                 <a href=' https://maps.app.goo.gl/SCEcBxppkw2TQtGdA?g_st=aw'
                 target="_blank">
+                <div className='hover:text-gray-500'>
                 <h2 className="text-xl flex items-center" style={{marginLeft: '50px'}} >
                     <MdLocationOn style={{ marginRight: '10px', fontSize: "25px" }}/>
-                    <b>Address:</b>&nbsp; &nbsp;<div className='hover:text-gray-500'>UG 05, Raviraj CRU,  
-                    </div> 
+                    <b>Address:</b>&nbsp; &nbsp;UG 05, Raviraj CRU,  
                 </h2>
                 <h2 className="text-xl flex items-center" style={{marginLeft: '180px'}} >
                 <div className='hover:text-gray-500'>Bibwewadi- Kondhawa Rd,Pune - 411037
                 </div>
                 </h2>
+                </div>
                 </a>
             </div>
             <div className="text-black relative pl-4 lg:pl-8 py-8 lg:pl-0 lg:text-left">

@@ -9,16 +9,16 @@ import Careers from "./pages/Careers";
 import { NavLink } from "react-router-dom";
 import ServicesCard from "./components/ServicesCards";
 import DirectandIndirectTaxation from "./InfoPages/DirectandIndirectTaxation";
-import AuditandAssurance from "./InfoPages/Assurance";
+import AuditandAssurance from "./InfoPages/Audit";
 import ManagementConsultancy from "./InfoPages/RiskAdvisoryServices";
 import TransactionAdvisory from "./InfoPages/RiskAdvisoryServices";
-import BusinessRegistrationService from "./InfoPages/BusinessRegistrationService";
+import BusinessRegistrationService from "./InfoPages/BusinessRegistration";
 import DirectTaxation from "./InfoPages/DirectTaxation";
 import InternationalTaxation from "./InfoPages/InternationalTaxation";
 import IndirectTaxation from "./InfoPages/IndirectTaxation";
-import BusinessSupportServices from "./InfoPages/BusinessSupportServices";
+import BusinessSupportServices from "./InfoPages/BusinessSupport";
 import RiskAdvisoryServices from "./InfoPages/RiskAdvisoryServices";
-import Assurance from "./InfoPages/Assurance";
+import Assurance from "./InfoPages/Audit";
 
 function App() {
     return (
@@ -33,7 +33,7 @@ function App() {
                     <Route exact path="/contact" element={<Contact />} />
                     <Route exact path="/careers" element={<Careers />} />
                     <Route
-                        path="/services/Direct Taxation"
+                        path="/services/Direct Tax"
                         element={<DirectTaxation/>}
                     />
                     <Route
