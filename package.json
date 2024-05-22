@@ -2,7 +2,7 @@
   "name": "varun-associates-site",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://harshdarakhd.github.io/ca-varun-associates-site",
+  "homepage": "https://www.adal.co.in",
   "dependencies": {
     "@ant-design/pro-card": "^2.4.13",
     "@emotion/react": "^11.11.0",
