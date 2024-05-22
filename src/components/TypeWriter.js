@@ -3,7 +3,7 @@ import Typewriter from "typewriter-effect";
 
 function Type() {
   return (
-    <div style={{ fontSize: "20px", fontWeight: "bold" }}>
+    <div style={{ fontSize: "20px", fontWeight: "bold", marginTop: "60px"}}>
       <Typewriter
         options={{
           strings: ["WHO WE ARE"],
