@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/ca-varun-associates-site/static/css/main.e63141ff.css",
-    "main.js": "/ca-varun-associates-site/static/js/main.336c1bd6.js",
-    "static/media/Home.jpg": "/ca-varun-associates-site/static/media/Home.a768b90ab0a4f8852ba8.jpg",
-    "static/media/VarunD.png": "/ca-varun-associates-site/static/media/VarunD.dfeb0296e8b8995827e2.png",
-    "static/media/JayeshA.png": "/ca-varun-associates-site/static/media/JayeshA.76f45c93f34799e2085e.png",
-    "static/media/Krishna.png": "/ca-varun-associates-site/static/media/Krishna.92ffda7fb0df095f5cf2.png",
-    "static/media/Audit.jpg": "/ca-varun-associates-site/static/media/Audit.c4395c7e65309ea64f46.jpg",
-    "static/media/Management.jpg": "/ca-varun-associates-site/static/media/Management.dd13b37bd5359e8080ba.jpg",
-    "static/media/Tax.png": "/ca-varun-associates-site/static/media/Tax.dddc89995418ca77b03e.png",
-    "static/media/contact.png": "/ca-varun-associates-site/static/media/contact.5c83a6f90e1be1fd27cc.png",
-    "static/media/CA_logo.png": "/ca-varun-associates-site/static/media/CA_logo.c4c26b2d2d2f4cb4577d.png",
-    "index.html": "/ca-varun-associates-site/index.html",
-    "main.e63141ff.css.map": "/ca-varun-associates-site/static/css/main.e63141ff.css.map",
-    "main.336c1bd6.js.map": "/ca-varun-associates-site/static/js/main.336c1bd6.js.map"
+    "main.css": "/static/css/main.e63141ff.css",
+    "main.js": "/static/js/main.aa9cd137.js",
+    "static/media/Home.jpg": "/static/media/Home.a768b90ab0a4f8852ba8.jpg",
+    "static/media/VarunD.png": "/static/media/VarunD.dfeb0296e8b8995827e2.png",
+    "static/media/JayeshA.png": "/static/media/JayeshA.76f45c93f34799e2085e.png",
+    "static/media/Krishna.png": "/static/media/Krishna.92ffda7fb0df095f5cf2.png",
+    "static/media/Audit.jpg": "/static/media/Audit.c4395c7e65309ea64f46.jpg",
+    "static/media/Management.jpg": "/static/media/Management.dd13b37bd5359e8080ba.jpg",
+    "static/media/Tax.png": "/static/media/Tax.dddc89995418ca77b03e.png",
+    "static/media/contact.png": "/static/media/contact.5c83a6f90e1be1fd27cc.png",
+    "static/media/CA_logo.png": "/static/media/CA_logo.c4c26b2d2d2f4cb4577d.png",
+    "index.html": "/index.html",
+    "main.e63141ff.css.map": "/static/css/main.e63141ff.css.map",
+    "main.aa9cd137.js.map": "/static/js/main.aa9cd137.js.map"
   },
   "entrypoints": [
     "static/css/main.e63141ff.css",
-    "static/js/main.336c1bd6.js"
+    "static/js/main.aa9cd137.js"
   ]
 }
