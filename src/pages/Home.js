@@ -332,7 +332,7 @@ const HomeInfo = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const scrollRef = useRef(7);
 
-  useEffect(() => {
+  /* useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % img.length);
     }, 3000); // Auto-scroll every 10 seconds
@@ -360,7 +360,7 @@ const HomeInfo = () => {
       prevIndex === 0 ? img.length - 1 : prevIndex - 1
     );
   }
-
+*/
   return (
     <div className="relative flex flex-col items-center">
       <div className="flex flex-wrap justify-left items-center mt-2 w-full mx-auto">
@@ -371,39 +371,17 @@ const HomeInfo = () => {
           Industries We Serve
         </h1>
       </div>
-      <div className="relative w-full overflow-x-hidden">
+      <div className="relative w-full">
         <div
           ref={scrollRef}
-          className="flex space-x-4 p-4 transition-transform duration-500 ease-in-out"
+          className="flex space-x-2 p-4 transition-transform duration-500 ease-in-out"
         >
           {img.map((img, index) => (
             <img
               key={index}
               src={img}
               alt={`Slide ${index}`}
-              className="min-w-[20%] lg:min-w-[20%] md:min-w-[25%] sm:min-w-[33.33%] object-cover rounded-lg"
-            />
-          ))}
-        </div>
-        <button
-          onClick={handlePrev}
-          className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 p-2 rounded-full"
-        >
-          <AiOutlineLeft size={30} />
-        </button>
-        <button
-          onClick={handleNext}
-          className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 p-2 rounded-full"
-        >
-          <AiOutlineRight size={30} />
-        </button>
-        <div className="absolute bottom-4 w-full flex justify-center">
-          {img.map((_, index) => (
-            <div
-              key={index}
-              className={`h-2 w-2 rounded-full mx-1 ${
-                index === currentIndex ? 'bg-blue-500' : 'bg-gray-300'
-              }`}
+              className="min-w-[15%] lg:min-w-[15%] md:min-w-[20%] sm:min-w-[25%] object-cover rounded-lg"
             />
           ))}
         </div>
