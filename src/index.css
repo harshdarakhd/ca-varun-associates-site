@@ -2,6 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
+.relative {
+  position: relative;
+  overflow: hidden;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.transition-transform {
+  transition: transform 1s ease;
+}
+
+.translate-x-0 {
+  transform: translateX(0%);
+}
+
+.translate-x-full {
+  transform: translateX(100%);
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
 /* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

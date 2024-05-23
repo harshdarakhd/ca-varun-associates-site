@@ -130,7 +130,7 @@ function Navbar() {
 
     function linkClasses(path) {
     const isActive = location.pathname === path;
-    return `${isActive ? "text-white" : "text-gray-600"} hover:text-white text-xl`;
+    return `${isActive ? "text-white" : "text-gray-500"} hover:text-white text-xl`;
     }
     // function linkClasses(path) {
     //     const isActive = location.pathname === path;
@@ -139,15 +139,16 @@ function Navbar() {
     //         isActive ? "bg-gray-600 text-white" : "bg-gray-200"
     //     } hover:bg-gray-600 hover:text-white`;
     // }
+    
 
     return (
-        <div className="bg-black p-2 fixed top-0 w-full z-40 font-verdana">
+        <div className="bg-gray-900 p-1 fixed top-0 w-full z-40 font-verdana">
             <div className="flex justify-between items-center">
                 <div className="flex items-center">
-                    <img src={logo} className="w-20 h-18 mr-2" alt="logo" />
-                    <div>
-                        <h1 className='font-normal font-serif text-4xl md:2xl sm:xl hover:text-gray-500 text-white'>Agrawal Darak & </h1>
-                        <h1 className='font-thin font-serif text-4xl md:xl sm:lg hover:text-gray-500 mb-0 text-white'>Associates LLP</h1>
+                    <img src={logo} className="w-18 h-16 mr-2" alt="logo" />
+                    <div className='font-normal font-serif text-3xl md:2xl sm:xl hover:text-gray-500 text-white'>
+                        <h1>Agarwal Darak & Associates LLP</h1>
+                        <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chartered Accountants</h1>
                     </div>
                 </div>
                 <ul className="flex justify-center space-x-8 mr-4">
