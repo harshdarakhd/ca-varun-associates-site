@@ -95,7 +95,8 @@ function ContactUs() {
                 <div style={{ display: 'flex', alignItems: 'center'}}></div>
                 <h2 className="text-xl mb-4 flex items-center" style={{marginTop:'30px',marginLeft: '50px'}}>
                     <MdEmail style={{ marginRight: '10px', fontSize: "25px" }}/>
-                    <b>Email:</b>&nbsp; info@adal.com
+                    <b>Email:</b>&nbsp; <a href="mailto:info@adal.com" className="hover:text-blue-500">
+                    info@adal.com</a>
                 </h2>
                 <h2 className="text-xl mb-4 flex items-center" style={{marginLeft: '50px'}} >
                     <MdPhoneIphone style={{ marginRight: '10px', fontSize: "25px" }}/>
@@ -106,14 +107,14 @@ function ContactUs() {
                     <a
                         href="https://api.whatsapp.com/send/?phone=919028330031&text=Hello wanted to connect with you."
                         target="_blank"
-                        className="hover:text-gray-500"
+                        className="hover:text-blue-500"
                     >
                         Click to chat on WhatsApp
                     </a>
                 </h2>
                 <a href=' https://maps.app.goo.gl/SCEcBxppkw2TQtGdA?g_st=aw'
                 target="_blank">
-                <div className='hover:text-gray-500'>
+                <div className='hover:text-blue-500'>
                 <h2 className="text-xl flex items-center" style={{marginLeft: '50px'}} >
                     <MdLocationOn style={{ marginRight: '10px', fontSize: "25px" }}/>
                     <b>Address:</b>&nbsp; &nbsp;UG 05, Raviraj CRU,  

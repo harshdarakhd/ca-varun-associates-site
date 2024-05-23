@@ -130,7 +130,7 @@ function Navbar() {
 
     function linkClasses(path) {
     const isActive = location.pathname === path;
-    return `${isActive ? "text-white" : "text-gray-600"} hover:text-white text-xl`;
+    return `${isActive ? "text-white" : "text-gray-500"} hover:text-white text-xl`;
     }
     // function linkClasses(path) {
     //     const isActive = location.pathname === path;
@@ -139,6 +139,7 @@ function Navbar() {
     //         isActive ? "bg-gray-600 text-white" : "bg-gray-200"
     //     } hover:bg-gray-600 hover:text-white`;
     // }
+    
 
     return (
         <div className="bg-gray-900 p-1 fixed top-0 w-full z-40 font-verdana">

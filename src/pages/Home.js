@@ -41,19 +41,20 @@ import { FaArrowLeft, FaArrowRight} from "react-icons/fa6";
 import { FaLocationArrow } from "react-icons/fa";
 import Home1 from '../Images/Home1.jpeg';
 import Home2 from '../Images/Home2.jpeg';
-import Home3 from '../Images/Home3.jpeg';
-import Home4 from '../Images/Home4.jpeg';
+import Home5 from '../Images/Home3.png';
+import Home6 from '../Images/Home4.png';
 import img1 from '../assets/FMCG.png';
 import img2 from '../assets/InfrastructureandRealEstate.png';
 import img3 from '../assets/Manufacturing.png';  
 import img4 from '../assets/Jewellery.png';
 import img5 from '../assets/HealthCare.png';
 import img6 from '../assets/Lifestyle.png';
+import img7 from '../assets/NBFCsandFinancialServices.png';
 
 
 const { Meta } = Card;
 
-const images = [Home1, Home2, Home3, Home4];
+const images = [Home1, Home2, Home5, Home6];
 
 const LandingPage = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -327,7 +328,7 @@ const Hometext = () => {
 // };
 
 
-const img = [img1, img2, img3, img4, img5, img6];
+const img = [img1, img2, img3, img5, img7];
 const HomeInfo = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const scrollRef = useRef(7);
@@ -459,7 +460,8 @@ const FooterArea = () => {
         © 2023 ADAL
       </h2>
       <div>
-      <h2>info@adal.co.in</h2>
+      <h2><a href="mailto:info@adal.com" className='hover:text-blue-500'>
+        info@adal.com</a></h2>
       {/* add a horizontal razor line which will be white in color */}
       <hr style={{ borderTop: '0.25px solid white', width: '80%', marginTop: '20px'}}/>
       {/* add linkedin & whatsapp icon link */}
@@ -490,24 +492,30 @@ const FooterArea = () => {
     <h1 className="text-2xl" style={{ marginTop: '80px' }}>
         Office Address
       </h1>
-      <div className='hover:text-gray-500'>
+      <div className='hover:text-blue-500'>
       <div style={{ display: 'flex', alignItems: 'center' }}>
           <a href='https://g.co/kgs/qx9HNzw'
           target="_blank">       
-          <FaLocationArrow className='hover:text-gray-500' style={{ marginRight: '5px', marginTop: '10px',fontSize: "25px" }}/>
+          <FaLocationArrow className='hover:text-blue-500' style={{ marginRight: '5px', marginTop: '10px',fontSize: "25px" }}/>
           </a>
           <h2 className="text-xl" style={{ marginTop: '10px' }}>
+          <a href='https://g.co/kgs/qx9HNzw'>
            : UG 05, Raviraj CRU,
+           </a>
           </h2>
           </div>
           <div style={{ display: 'flex', alignItems: 'center' }}>
           <h2 className="text-xl">
+          <a href='https://g.co/kgs/qx9HNzw'>
           Bibwewadi - Kondhawa Rd.,
+          </a>
           </h2>
           </div>
           <div style={{ display: 'flex', alignItems: 'center' }}>
           <h2 className="text-xl">
+           <a href='https://g.co/kgs/qx9HNzw'>
            Pune - 411037
+            </a>
           </h2>
           </div>
           </div>

@@ -68,7 +68,8 @@ function Careers() {
                     personal level.
                 </div>
                 <div className="text-2xl mt-20" style={justifyStyle}>
-                    Send us your CV at info@adal.com
+                    Send us your CV at <a href="mailto:info@adal.com" className="text-blue-600"> 
+                    info@adal.com</a>
                 </div>
                 <div className="text-2xl mt-10" style={justifyStyle}>
                     Your CV must contain details of your actual experience, preference if any, for specific 

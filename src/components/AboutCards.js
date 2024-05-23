@@ -137,7 +137,7 @@ function AboutCard() {
                         />
                         <div className="flex justify-center mt-2">
                             <Link to={item.link} target="_blank">
-                                <AiFillLinkedin
+                                <AiFillLinkedin className="hover:text-gray-500"
                                     style={{
                                         fontSize: "30px",
                                     }}
