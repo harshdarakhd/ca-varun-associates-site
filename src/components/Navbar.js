@@ -120,7 +120,7 @@
 
 // export default Navbar;
 
-import React from "react";
+import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import logo from '../assets/CA_logo.png';
 
@@ -140,39 +140,86 @@ function Navbar() {
     //     } hover:bg-gray-600 hover:text-white`;
     // }
     
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
 
     return (
+        // <div className="bg-gray-900 p-1 fixed top-0 w-full z-40 font-verdana">
+        //     <div className="flex justify-between items-center">
+        //         <div className="flex items-center">
+        //             <img src={logo} className="w-18 h-16 mr-2" alt="logo" />
+        //             <div className='font-normal font-serif text-3xl md:2xl sm:xl hover:text-gray-500 text-white'>
+        //                 <h1>Agarwal Darak & Associates LLP</h1>
+        //                 <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chartered Accountants</h1>
+        //             </div>
+        //         </div>
+        //         <ul className="flex justify-center space-x-8 mr-4">
+        //             <li className="sm:text-sm text-center">
+        //                 <Link to="/" className={linkClasses("/")}>
+        //                     Home
+        //                 </Link>
+        //             </li>
+        //             <li className="sm:text-sm text-center">
+        //                 <Link to="/services" className={linkClasses("/services")}>
+        //                     Our Services
+        //                 </Link>
+        //             </li>
+        //             <li className="sm:text-sm text-center">
+        //                 <Link to="/about" className={linkClasses("/about")}>
+        //                     About Us
+        //                 </Link>
+        //             </li>
+        //             <li className="sm:text-sm text-center">
+        //                 <Link to="/careers" className={linkClasses("/careers")}>
+        //                     Careers
+        //                 </Link>
+        //             </li>
+        //             <li className="sm:text-sm text-center">
+        //                 <Link to="/contact" className={linkClasses("/contact")}>
+        //                     Contact
+        //                 </Link>
+        //             </li>
+        //         </ul>
+        //     </div>
+        // </div>
+
         <div className="bg-gray-900 p-1 fixed top-0 w-full z-40 font-verdana">
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between items-center flex-wrap">
                 <div className="flex items-center">
                     <img src={logo} className="w-18 h-16 mr-2" alt="logo" />
-                    <div className='font-normal font-serif text-3xl md:2xl sm:xl hover:text-gray-500 text-white'>
+                    <div className='font-normal font-serif text-lg md:text-2xl lg:text-3xl hover:text-gray-500 text-white'>
                         <h1>Agarwal Darak & Associates LLP</h1>
-                        <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chartered Accountants</h1>
+                        <h1 className="hidden sm:block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chartered Accountants</h1>
                     </div>
                 </div>
-                <ul className="flex justify-center space-x-8 mr-4">
-                    <li className="sm:text-sm text-center">
+                <button onClick={toggleMenu} className="sm:hidden flex items-center px-3 py-2 rounded text-white border-white hover:text-gray-500 hover:border-gray-500">
+                    <svg className="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+                </button>
+                <ul className={`${isOpen ? 'block' : 'hidden'} sm:flex justify-center space-x-8 mr-4 w-full sm:w-auto`}>
+                    <li className="text-sm sm:text-sm text-center">
                         <Link to="/" className={linkClasses("/")}>
                             Home
                         </Link>
                     </li>
-                    <li className="sm:text-sm text-center">
+                    <li className="text-sm sm:text-sm text-center">
                         <Link to="/services" className={linkClasses("/services")}>
                             Our Services
                         </Link>
                     </li>
-                    <li className="sm:text-sm text-center">
+                    <li className="text-sm sm:text-sm text-center">
                         <Link to="/about" className={linkClasses("/about")}>
                             About Us
                         </Link>
                     </li>
-                    <li className="sm:text-sm text-center">
+                    <li className="text-sm sm:text-sm text-center">
                         <Link to="/careers" className={linkClasses("/careers")}>
                             Careers
                         </Link>
                     </li>
-                    <li className="sm:text-sm text-center">
+                    <li className="text-sm sm:text-sm text-center">
                         <Link to="/contact" className={linkClasses("/contact")}>
                             Contact
                         </Link>

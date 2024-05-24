@@ -52,35 +52,25 @@ function Careers() {
     };
 
     return (
-        <div className="flex flex-col">
-            <div className="pl-4 lg:py-8 lg:text-left" style={{ marginLeft: '40px', marginRight: '40px' }}>
-                <h1 className="text-6xl mt-40">Make an impact that matters.</h1>
-                <div className="text-2xl mt-20" style={justifyStyle}>
-                    Many ideas grow better when transplanted into another mind than the one where they sprang up.
-                </div>
-                <div className="text-2xl mt-10" style={justifyStyle}>
-                    Our goal at Agarwal Darak & Associates is to build a team of individuals with competence, integrity, a 
-                    passion for excellence, a desire to learn, a willingness to work hard, and more importantly, 
-                    deep respect for their own commitments. A healthy work ethic and meritocracy, which rewards 
-                    superior performance faster than expected, will reward them in return. Agarwal Darak & Associates offers a 
-                    challenging, stimulating and professional work environment where you will be an integral part 
-                    of the team. We offer an exciting opportunity for you to grow on both a professional and 
-                    personal level.
-                </div>
-                <div className="text-2xl mt-20" style={justifyStyle}>
-                    Send us your CV at <a href="mailto:info@adal.com" className="text-blue-600"> 
-                    info@adal.com</a>
-                </div>
-                <div className="text-2xl mt-10" style={justifyStyle}>
-                    Your CV must contain details of your actual experience, preference if any, for specific 
-                    service areas, current and expected remuneration and the period within which you can join 
-                    if an offer is made.
-                </div>
-                <div className="text-2xl mt-20" style={justifyStyle}>
+        <div className="flex flex-col items-center">
+            <div className="max-w-4xl px-4 py-8 lg:py-16">
+                <h1 className="text-6xl mt-10 lg:mt-40 text-center">Make an impact that matters.</h1>
+                <p className="text-2xl mt-10 lg:mt-20 text-center">{`Many ideas grow better when transplanted into another mind than the one where they sprang up.`}</p>
+                <p className="text-2xl mt-10 lg:mt-20 text-center">
+                    Our goal at Agarwal Darak & Associates is to build a team of individuals with competence, integrity, a passion for excellence, a desire to learn, a willingness to work hard, and more importantly, deep respect for their own commitments. A healthy work ethic and meritocracy, which rewards superior performance faster than expected, will reward them in return. Agarwal Darak & Associates offers a challenging, stimulating, and professional work environment where you will be an integral part of the team. We offer an exciting opportunity for you to grow on both a professional and personal level.
+                </p>
+                <p className="text-2xl mt-10 lg:mt-20 text-center">
+                    Send us your CV at <a href="mailto:info@adal.com" className="text-blue-600">info@adal.com</a>
+                </p>
+                <p className="text-2xl mt-10 lg:mt-20 text-center">
+                    Your CV must contain details of your actual experience, preference if any, for specific service areas, current and expected remuneration, and the period within which you can join if an offer is made.
+                </p>
+                <p className="text-2xl mt-10 lg:mt-20 text-center">
                     Wishing you all success in your career ahead.
-                </div>
+                </p>
             </div>
         </div>
+
     );
 }
 
