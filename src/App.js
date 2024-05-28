@@ -18,7 +18,8 @@ import InternationalTaxation from "./InfoPages/InternationalTaxation";
 import IndirectTaxation from "./InfoPages/IndirectTaxation";
 import BusinessSupportServices from "./InfoPages/BusinessSupport";
 import RiskAdvisoryServices from "./InfoPages/RiskAdvisoryServices";
-import Assurance from "./InfoPages/Audit";
+import Audit from "./InfoPages/Audit";
+import IncomeTaxReturns from "./InfoPages/IncomeTaxReturns";
 
 function App() {
     return (
@@ -37,29 +38,34 @@ function App() {
                         element={<DirectTaxation/>}
                     />
                     <Route
-                        path="/services/Indirect Taxation"
+                        path="/services/GST"
                         element={<IndirectTaxation />}
                     />
                     <Route
-                        path="/services/International Taxation"
+                        path="/services/International Tax"
                         element={<InternationalTaxation />}
                     />
                     <Route
-                        path="/services/Business Support Services"
+                        path="/services/Business Support"
                         element={<BusinessSupportServices />}
                     />
                     <Route
-                        path="/services/Risk Advisory Services"
+                        path="/services/Risk Advisory"
                         element={<RiskAdvisoryServices />}
                     />
                     <Route
-                        path="/services/Business Registration Services"
+                        path="/services/Business Registration"
                         element={<BusinessRegistrationService/>}
                     />
                     <Route
-                        path="/services/Assurance Service"
-                        element={<Assurance />}
+                        path="/services/Audit"
+                        element={<Audit />}
                     />
+                    <Route
+                        path="/services/Income Tax Returns"
+                        element={<IncomeTaxReturns />}
+                    />
+
                 </Routes>
             </Router>
         </div>
