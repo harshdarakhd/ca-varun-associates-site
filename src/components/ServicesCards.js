@@ -8,42 +8,48 @@ import DirectTax from "../assets/ServicesImages/DirectTax.png";
 import GST from "../assets/ServicesImages/GST.png";
 import InternationalTax from "../assets/ServicesImages/InternationaTax.jpg";
 import RiskAdvisory from "../assets/ServicesImages/RiskAdvisory.jpg";
+import IncomeTaxReturns from "../assets/ServicesImages/IncomeTaxReturn.jpg";
 
 const { Meta } = Card;
 
 const data = [
     {
         id: 1,
+        title: "Income Tax Returns",
+        image: IncomeTaxReturns,
+    },
+    {
+        id: 2,
         title: "Audit",
         image: Audit,
     },
     {
-        id: 2,
+        id: 3,
         title: "Business Registration",
         image: BusinessRegistration,
     },
     {
-        id: 3,
+        id: 4,
         title: "Business Support",
         image: BusinessSupport,
     },
     {
-        id: 4,
+        id: 5,
         title: "Direct Tax",
         image: DirectTax,
     },
     {
-        id: 5,
+        id: 6,
         title: "GST",
         image: GST,
     },
     {
-        id: 6,
+        id: 7,
         title: "International Tax",
         image: InternationalTax,
     },
     {
-        id : 7,
+        id : 8,
         title : "Risk Advisory",
         image : RiskAdvisory
     }
@@ -51,13 +57,13 @@ const data = [
 
 function ServicesCard() {
     return (
-        <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 mt-10">
+        <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 ">
             {data.map((item) => {
                 return (
-                    <div className="md:w-[375px] flex flex-col mx-5 my-10 border-2 p-3 bg-[#FFFFFF] ">
+                    <div className="md:w-[350px] h-[350px] flex flex-col mx-5 my-10 border-4 p-3 bg-[#FFFFFF] ">
                         <h1 className="text-lg text-center font-semibold">{item.title}</h1>
                         <img
-                            className="w-[60%] rounded-md mt-2 mx-auto"
+                            className="w-[95%] h-[75%] rounded-md mt-2 mx-auto"
                             src={item.image}
                         />
                         {/* <p className="mt-4 font-sans text-center">To Know More</p> */}
