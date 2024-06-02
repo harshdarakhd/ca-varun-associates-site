@@ -55,6 +55,150 @@ import FooterArea from '../components/Footer';
 
 const { Meta } = Card;
 
+// const images = [Home1, Home2, Home5, Home6];
+
+// const LandingPage = () => {
+//   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+//   const [prevImageIndex, setPrevImageIndex] = useState(0);
+//   const [isInitialLoad, setIsInitialLoad] = useState(true);
+//   const [isTransitioning, setIsTransitioning] = useState(false);
+
+//   useEffect(() => {
+//     const interval = setInterval(() => {
+//       setIsTransitioning(true);
+//       setPrevImageIndex(currentImageIndex);
+//       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+//       setIsInitialLoad(false);
+//     }, 5000);
+
+//     return () => clearInterval(interval);
+//   }, [currentImageIndex]);
+
+//   const handlePrevClick = () => {
+//     setIsTransitioning(true);
+//     setPrevImageIndex(currentImageIndex);
+//     setCurrentImageIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+//     setIsInitialLoad(false);
+//   };
+
+//   const handleNextClick = () => {
+//     setIsTransitioning(true);
+//     setPrevImageIndex(currentImageIndex);
+//     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+//     setIsInitialLoad(false);
+//   };
+
+//   return (
+//     <div className="relative w-full h-screen overflow-hidden mt-10">
+//       {images.map((image, index) => (
+//         <img
+//           key={index}
+//           src={image}
+//           alt={`Slide ${index}`}
+//           className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000 ${index === currentImageIndex ? 'opacity-100 z-10' : 'opacity-0 z-0'
+//             } ${isInitialLoad
+//               ? 'animate-fade-in'
+//               : isTransitioning
+//                 ? index === currentImageIndex
+//                   ? 'animate-fade-in'
+//                   : 'opacity-0'
+//                 : ''
+//             }`}
+//           onAnimationEnd={() => setIsTransitioning(false)}
+//         />
+//       ))}
+//       <div className="absolute inset-0 flex items-center justify-between p-4">
+//         <button
+//           onClick={handlePrevClick}
+//           className="text-white bg-black bg-opacity-50 rounded-full p-2 z-20"
+//         >
+//           <FaArrowLeft size={30} />
+//         </button>
+//         <button
+//           onClick={handleNextClick}
+//           className="text-white bg-black bg-opacity-50 rounded-full p-2 z-20"
+//         >
+//           <FaArrowRight size={30} />
+//         </button>
+//       </div>
+//     </div>
+//   );
+// };
+
+
+// const images = [Home1, Home2, Home5, Home6];
+
+// const LandingPage = () => {
+//   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+//   const [prevImageIndex, setPrevImageIndex] = useState(0);
+//   const [isInitialLoad, setIsInitialLoad] = useState(true);
+//   const [isTransitioning, setIsTransitioning] = useState(false);
+
+//   useEffect(() => {
+//     const interval = setInterval(() => {
+//       setIsTransitioning(true);
+//       setPrevImageIndex(currentImageIndex);
+//       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+//       setIsInitialLoad(false);
+//     }, 5000);
+
+//     return () => clearInterval(interval);
+//   }, [currentImageIndex]);
+
+//   const handlePrevClick = () => {
+//     setIsTransitioning(true);
+//     setPrevImageIndex(currentImageIndex);
+//     setCurrentImageIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+//     setIsInitialLoad(false);
+//   };
+
+//   const handleNextClick = () => {
+//     setIsTransitioning(true);
+//     setPrevImageIndex(currentImageIndex);
+//     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+//     setIsInitialLoad(false);
+//   };
+
+//   return (
+//     <div className="relative w-70% h-screen overflow-hidden mt-10">
+//       {images.map((image, index) => (
+//         <img
+//           key={index}
+//           src={image}
+//           alt={`Slide ${index}`}
+//           className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000 ${index === currentImageIndex ? 'opacity-100 z-10' : 'opacity-0 z-0'
+//             } ${isInitialLoad
+//               ? 'animate-fade-in'
+//               : isTransitioning
+//                 ? index === currentImageIndex
+//                   ? 'animate-fade-in'
+//                   : 'opacity-0'
+//                 : ''
+//             }`}
+//           onAnimationEnd={() => setIsTransitioning(false)}
+//           style={{ objectFit: 'contain' }} // Change this to 'contain' if you prefer no cropping
+//         />
+//       ))}
+//       <div className="absolute inset-0 flex items-center justify-between p-4">
+//         <button
+//           onClick={handlePrevClick}
+//           className="text-white bg-black bg-opacity-50 rounded-full p-2 z-20"
+//         >
+//           <FaArrowLeft size={30} />
+//         </button>
+//         <button
+//           onClick={handleNextClick}
+//           className="text-white bg-black bg-opacity-50 rounded-full p-2 z-20"
+//         >
+//           <FaArrowRight size={30} />
+//         </button>
+//       </div>
+//     </div>
+//   );
+// };
+
+
+
 const images = [Home1, Home2, Home5, Home6];
 
 const LandingPage = () => {
@@ -89,13 +233,13 @@ const LandingPage = () => {
   };
 
   return (
-    <div className="relative w-full h-screen overflow-hidden mt-10">
+    <div className="relative w-full h-screen overflow-hidden mt-10 md:w-90%">
       {images.map((image, index) => (
         <img
           key={index}
           src={image}
           alt={`Slide ${index}`}
-          className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000 ${index === currentImageIndex ? 'opacity-100 z-10' : 'opacity-0 z-0'
+          className={`absolute top-0 left-0 w-full h-full object-contain md:object-cover transition-opacity duration-1000 transform md:scale-85 ${index === currentImageIndex ? 'opacity-100 z-10' : 'opacity-0 z-0'
             } ${isInitialLoad
               ? 'animate-fade-in'
               : isTransitioning
@@ -124,6 +268,9 @@ const LandingPage = () => {
     </div>
   );
 };
+
+
+
 
 
 const data = [

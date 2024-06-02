@@ -34,10 +34,14 @@
 
 // export default RiskAdvisoryServices
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import logo from '../assets/ServicesImages/RiskAdvisory.jpg';
 
 function RiskAdvisoryServices() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    }, []);
+
   return (
     <div className="flex flex-col lg:flex-row justify-between items-start py-8">
       <div className="text-black text-xl lg:pl-8 lg:text-left flex-1">

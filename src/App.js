@@ -20,6 +20,8 @@ import BusinessSupportServices from "./InfoPages/BusinessSupport";
 import RiskAdvisoryServices from "./InfoPages/RiskAdvisoryServices";
 import Audit from "./InfoPages/Audit";
 import IncomeTaxReturns from "./InfoPages/IncomeTaxReturns";
+import PrivacyPolicy from "./InfoPages/privacy_policy";
+import TermsofUse from "./InfoPages/terms_of_use";
 
 function App() {
     return (
@@ -65,7 +67,14 @@ function App() {
                         path="/services/Income Tax Returns"
                         element={<IncomeTaxReturns />}
                     />
-
+                    <Route 
+                        path ="privacy-policy"
+                        element={<PrivacyPolicy />}
+                    />
+                    <Route
+                        path="terms-of-use"
+                        element={<TermsofUse />}
+                    />
                 </Routes>
             </Router>
         </div>

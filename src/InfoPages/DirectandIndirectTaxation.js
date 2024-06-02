@@ -1,6 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 function DirectandIndirectTaxation() {
+  useEffect(() => {
+      window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div>
       <div className="max-w-xl text-black text-xl relative pl-2 lg:pl-8 py-8 lg:pl-0 lg:text-left">

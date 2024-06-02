@@ -39,16 +39,52 @@
 
 
 
+// import { Divider } from "antd";
+// import React, { useEffect } from "react";
+// import ServicesCard from "../components/ServicesCards";
+// import Audit from "../InfoPages/Audit";
+// import DirectTaxation from "../InfoPages/DirectTaxation";
+// import BusinessRegistration from "../InfoPages/BusinessRegistration";
+// import BusinessSupport from "../InfoPages/BusinessSupport";
+// import InternationalTaxation from "../InfoPages/InternationalTaxation";
+// import RiskAdvisoryServices from "../InfoPages/RiskAdvisoryServices";
+// import IndirectTaxation from "../InfoPages/IndirectTaxation";
+// import FooterArea from "../components/Footer";
+
+// function Services() {
+//     useEffect(() => {
+//         window.scrollTo(0, 0);
+//     }, []);
+
+//     return (
+//         <div style={{ padding: 20 }}>
+//             <Divider>
+//                 <h1 className="text-3xl md:text-5xl font-bold mt-20 mb-6">OUR SERVICES</h1>
+//             </Divider>
+//             <div className="flex flex-col items-center">
+//                 <ServicesCard />
+//                 {/* <div className="flex flex-col items-center">
+//                     <DirectTaxation />
+//                     <Audit />
+//                     <IndirectTaxation />
+//                     <BusinessRegistration />
+//                     <BusinessSupport />
+//                     <InternationalTaxation />
+//                     <RiskAdvisoryServices />
+//                 </div> */}
+//             </div>
+//             <div>
+//             {/* <FooterArea /> */}
+//             </div>
+//         </div>
+//     );
+// }
+
+// export default Services;
+
 import { Divider } from "antd";
 import React, { useEffect } from "react";
 import ServicesCard from "../components/ServicesCards";
-import Audit from "../InfoPages/Audit";
-import DirectTaxation from "../InfoPages/DirectTaxation";
-import BusinessRegistration from "../InfoPages/BusinessRegistration";
-import BusinessSupport from "../InfoPages/BusinessSupport";
-import InternationalTaxation from "../InfoPages/InternationalTaxation";
-import RiskAdvisoryServices from "../InfoPages/RiskAdvisoryServices";
-import IndirectTaxation from "../InfoPages/IndirectTaxation";
 import FooterArea from "../components/Footer";
 
 function Services() {
@@ -57,25 +93,16 @@ function Services() {
     }, []);
 
     return (
-        <div style={{ padding: 20 }}>
-            <Divider>
-                <h1 className="text-3xl md:text-5xl font-bold mt-20 mb-6">OUR SERVICES</h1>
-            </Divider>
-            <div className="flex flex-col items-center">
-                <ServicesCard />
-                {/* <div className="flex flex-col items-center">
-                    <DirectTaxation />
-                    <Audit />
-                    <IndirectTaxation />
-                    <BusinessRegistration />
-                    <BusinessSupport />
-                    <InternationalTaxation />
-                    <RiskAdvisoryServices />
-                </div> */}
+        <div className="min-h-screen flex flex-col">
+            <div className="flex-grow" style={{ padding: 20 }}>
+                <Divider>
+                    <h1 className="text-3xl md:text-5xl font-bold mt-20 mb-6">OUR SERVICES</h1>
+                </Divider>
+                <div className="flex flex-col items-center">
+                    <ServicesCard />
+                </div>
             </div>
-            <div>
-            {/* <FooterArea /> */}
-            </div>
+            <FooterArea />
         </div>
     );
 }
