@@ -234,11 +234,12 @@
 
 
 import React, { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import logo from '../assets/CA_logo.png';
 
 function Navbar() {
     const location = useLocation();
+    const navigate = useNavigate();
 
     function linkClasses(path) {
         const isActive = location.pathname === path;
@@ -251,14 +252,19 @@ function Navbar() {
         setIsOpen(!isOpen);
     };
 
+    const closeMenu = () => {
+        setIsOpen(false);
+    };
+
     return (
         <div className="bg-gray-900 p-1 fixed top-0 w-full z-40 font-verdana">
             <div className="flex justify-between items-center flex-wrap">
                 <div className="flex items-center">
                     <img src={logo} className="w-14 h-15 mr-2" alt="logo" />
                     <div className='font-normal font-serif text-lg md:text-2xl lg:text-3xl text-white hover:text-gray-500'>
-                        <h2>Agarwal Darak & Associates LLP</h2>
-                        <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chartered Accountants</h1>
+                    <Link to="/" onClick={closeMenu}><h2>
+                            Agarwal Darak & Associates LLP</h2>
+                        <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chartered Accountants</h1></Link>
                     </div>
                 </div>
                 <button onClick={toggleMenu} className="sm:hidden flex items-center px-3 py-2 rounded text-white border-white hover:text-gray-500 hover:border-gray-500 mx-auto">
@@ -266,27 +272,27 @@ function Navbar() {
                 </button>
                 <ul className={`${isOpen ? 'block' : 'hidden'} sm:flex justify-center space-y-4 sm:space-y-0 sm:space-x-8 w-full sm:w-auto text-center mt-4 sm:mt-0`}>
                     <li className="text-sm sm:text-sm">
-                        <Link to="/" className={linkClasses("/")}>
+                        <Link to="/" onClick={closeMenu} className={linkClasses("/")}>
                             Home
                         </Link>
                     </li>
                     <li className="text-sm sm:text-sm">
-                        <Link to="/services" className={linkClasses("/services")}>
+                        <Link to="/services" onClick={closeMenu} className={linkClasses("/services")}>
                             Our Services
                         </Link>
                     </li>
                     <li className="text-sm sm:text-sm">
-                        <Link to="/about" className={linkClasses("/about")}>
+                        <Link to="/about" onClick={closeMenu} className={linkClasses("/about")}>
                             About Us
                         </Link>
                     </li>
                     <li className="text-sm sm:text-sm">
-                        <Link to="/careers" className={linkClasses("/careers")}>
+                        <Link to="/careers" onClick={closeMenu} className={linkClasses("/careers")}>
                             Careers
                         </Link>
                     </li>
                     <li className="text-sm sm:text-sm">
-                        <Link to="/contact" className={linkClasses("/contact")}>
+                        <Link to="/contact" onClick={closeMenu} className={linkClasses("/contact")}>
                             Contact
                         </Link>
                     </li>
