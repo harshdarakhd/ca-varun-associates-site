@@ -47,15 +47,15 @@ function BusinessSupportServices() {
   return (
     <div className="flex flex-col lg:flex-row justify-between items-start py-8">
       <div className="text-black text-xl lg:pl-8 lg:text-left flex-1">
-        <h1 className="mt-20 lg:mt-40 text-5xl mb-3 text-center lg:text-left">
+        <h1 className="mt-20 lg:mt-40 text-5xl mb-5 text-center lg:text-left">
           <b>BUSINESS SUPPORT SERVICES</b>
         </h1>
         <div className="mb-3">
-          <div className="mb-4 text-3xl text-center lg:text-left">
+          {/* <div className="mb-4 text-3xl text-center lg:text-left">
             Explore Business Support Services
-          </div>
+          </div> */}
           <div>Outsourcing of processes under the following functions:</div>
-          <div className="ml-4 lg:ml-10">
+          <div className="ml-4 mt-4 lg:ml-10">
             <b>I)</b> Accounts and finance
             <br />
             <b>II)</b> Management Reporting
