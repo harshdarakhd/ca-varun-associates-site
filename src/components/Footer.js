@@ -327,6 +327,9 @@ const FooterArea = () => {
           {/* <a href="/refund-policy" className="hover:text-blue-500">Refund Policy</a> */}
         </p>
       </div>
+      <div className="bg-gray-900 text-white p-3 text-sm flex justify-end text-right">
+        Design & Developed by<Link to='www.linkedin.com/in/harsh-d-07a873124' target="_blank" className="hover:text-blue-500">&nbsp;Harsh Darak</Link>
+      </div>
     </div>
   )
 }
