@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.63f49649.css",
-    "main.js": "/static/js/main.57685aac.js",
+    "main.css": "/static/css/main.030115d7.css",
+    "main.js": "/static/js/main.d92a5ca1.js",
     "static/media/Audit.jpg": "/static/media/Audit.73ec7efeab5c7f4fdcdf.jpg",
     "static/media/IncomeTaxReturn.jpg": "/static/media/IncomeTaxReturn.6755cc8229e4cd596061.jpg",
     "static/media/BusinessRegistration.jpg": "/static/media/BusinessRegistration.2b9b97cb9afa543fed04.jpg",
@@ -27,11 +27,11 @@
     "static/media/FMCG.png": "/static/media/FMCG.5cf09778c39bcd7804d8.png",
     "static/media/CA_logo.png": "/static/media/CA_logo.c4c26b2d2d2f4cb4577d.png",
     "index.html": "/index.html",
-    "main.63f49649.css.map": "/static/css/main.63f49649.css.map",
-    "main.57685aac.js.map": "/static/js/main.57685aac.js.map"
+    "main.030115d7.css.map": "/static/css/main.030115d7.css.map",
+    "main.d92a5ca1.js.map": "/static/js/main.d92a5ca1.js.map"
   },
   "entrypoints": [
-    "static/css/main.63f49649.css",
-    "static/js/main.57685aac.js"
+    "static/css/main.030115d7.css",
+    "static/js/main.d92a5ca1.js"
   ]
 }
