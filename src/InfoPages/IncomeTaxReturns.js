@@ -84,7 +84,7 @@ function IncomeTaxReturns() {
         <div className="mb-10">
           <ul className="list-disc pl-6 mb-10 ml-4 lg:ml-10 text-left">
             <li className="mb-4">
-              Salary income less than 50lakhs - Resident
+            Resident ITR - Rental Income + Salary Income + Income from Other Sources (aggregate less than 50 Lakhs)
               <div className="mt-2">
                 <a href="https://rzp.io/i/J8kN20h" target="_blank">
                   <button
@@ -96,7 +96,7 @@ function IncomeTaxReturns() {
               </div>
             </li>
             <li className="mb-4">
-              Salary income more than 50lakhs - Resident
+            Resident ITR - Rental Income + Salary Income + Income from Other Sources + Capital Gains
               <div className="mt-2">
                 <a href="https://rzp.io/i/Avhe4Ww1" target="_blank">
                   <button
@@ -108,7 +108,7 @@ function IncomeTaxReturns() {
               </div>
             </li>
             <li className="mb-4">
-              Futures and options income - Resident
+            Resident ITR - Rental Income + Salary Income + Capital Gains + Future & Options (Derivative Transactions) + Crypto Transactions (Virtual Digital Assets)
               <div className="mt-2">
                 <a href="https://rzp.io/i/mGqUSYi" target="_blank">
                   <button
@@ -119,7 +119,7 @@ function IncomeTaxReturns() {
                 </a>
               </div>
             </li>
-            <li className="mb-4">
+            {/* <li className="mb-4">
               Income from crypto transactions - Resident
               <div className="mt-2">
                 <a href="https://rzp.io/i/mGqUSYi" target="_blank">
@@ -130,9 +130,9 @@ function IncomeTaxReturns() {
                   </button>
                 </a>
               </div>
-            </li>
+            </li> */}
             <li className="mb-4">
-              Non-resident earning income from all sources except from business and profession and futures and options
+            Non-Resident ITR - Income from House Property + Income from Other Sources + Capital Gains
               <div className="mt-2">
                 <a href="https://rzp.io/i/mGqUSYi" target="_blank">
                   <button
@@ -144,7 +144,7 @@ function IncomeTaxReturns() {
               </div>
             </li>
             <li className="mb-4">
-              Non-resident earning income from business and profession and futures and options
+            Non-Resident ITR - Income from House Property + Income from Other Sources + Capital Gains + Future & Options (Derivative Transactions)
               <div className="mt-2">
                 <a href="https://rzp.io/i/tU4sqoD" target="_blank">
                   <button
@@ -158,8 +158,8 @@ function IncomeTaxReturns() {
           </ul>
         </div>
       </div>
-      <div className="flex-1 flex justify-center items-center lg:justify-end lg:items-start mt-10 lg:mt-40 lg:mr-10 text-5xl">
-        <img src={logo} className="w-[90%] rounded-md mt-2 lg:mt-0 lg:ml-8" alt="Direct Taxation" />
+      <div className="flex-1 flex justify-center items-center lg:justify-end lg:items-start mt-20 lg:mt-60 lg:mr-10 text-5xl">
+        <img src={logo} className="w-[90%] rounded-md mt-6 lg:mt-0 lg:ml-8" alt="Direct Taxation" />
       </div>
     </div>
   );

@@ -277,7 +277,7 @@ const FooterArea = () => {
                     }}
                   />
                 </a>
-                <a href="https://api.whatsapp.com/send/?phone=919028330031&text=Hello wanted to connect with you." target="_blank">
+                <a href="https://api.whatsapp.com/send/?phone=917385287426&text=Hello wanted to connect with you." target="_blank">
                   <MdWhatsapp
                     className="hover:text-gray-500"
                     style={{

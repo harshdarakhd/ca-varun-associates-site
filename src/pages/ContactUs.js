@@ -226,12 +226,12 @@ function ContactUs() {
                             </h2>
                             <h2 className="text-xl mb-4 flex items-center">
                                 <MdPhoneIphone style={{ marginRight: '10px', fontSize: "25px" }} />
-                                <p><b>Contact No:</b></p><p>+91 9028330031 / 7350723755</p>
+                                <p><b>Contact No:</b></p><p>+91 7385287426</p>
                             </h2>
                             <h2 className="text-xl mb-4 flex items-center">
                                 <MdWhatsapp style={{ marginRight: '10px', fontSize: "25px" }} />
                                 <a
-                                    href="https://api.whatsapp.com/send/?phone=919028330031&text=Hello wanted to connect with you."
+                                    href="https://api.whatsapp.com/send/?phone=917385287426&text=Hello wanted to connect with you."
                                     target="_blank"
                                     className="hover:text-blue-500"
                                 >
