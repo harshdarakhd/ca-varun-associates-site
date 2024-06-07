@@ -51,6 +51,15 @@ import img5 from '../assets/HealthCare.png';
 import img6 from '../assets/Lifestyle.png';
 import img7 from '../assets/NBFCsandFinancialServices.png';
 import FooterArea from '../components/Footer';
+import Homed from '../Images/Image1desktop.jpeg';
+import Homed1 from '../Images/Image2desktop.jpeg';
+import Homed2 from '../Images/Image3desktop.jpeg';
+import Homed3 from '../Images/Image4desktop.jpeg';
+import Homem from '../Images/Image1mobile.jpeg';
+import Homem1 from '../Images/Image2mobile.jpeg';
+import Homem2 from '../Images/Image3mobile.jpeg';
+import Homem3 from '../Images/Image4mobile.jpeg';
+
 
 
 const { Meta } = Card;
@@ -199,15 +208,105 @@ const { Meta } = Card;
 
 
 
-const images = [Home1, Home2, Home5, Home6];
+// const images = [Home1, Home2, Home5, Home6];
+
+// const LandingPage = () => {
+//   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+//   const [prevImageIndex, setPrevImageIndex] = useState(0);
+//   const [isInitialLoad, setIsInitialLoad] = useState(true);
+//   const [isTransitioning, setIsTransitioning] = useState(false);
+
+//   useEffect(() => {
+//     const interval = setInterval(() => {
+//       setIsTransitioning(true);
+//       setPrevImageIndex(currentImageIndex);
+//       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+//       setIsInitialLoad(false);
+//     }, 5000);
+
+//     return () => clearInterval(interval);
+//   }, [currentImageIndex]);
+
+//   const handlePrevClick = () => {
+//     setIsTransitioning(true);
+//     setPrevImageIndex(currentImageIndex);
+//     setCurrentImageIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+//     setIsInitialLoad(false);
+//   };
+
+//   const handleNextClick = () => {
+//     setIsTransitioning(true);
+//     setPrevImageIndex(currentImageIndex);
+//     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+//     setIsInitialLoad(false);
+//   };
+
+//   return (
+//     <div className="relative w-full h-screen overflow-hidden mt-10 md:w-90%">
+//       {images.map((image, index) => (
+//         <img
+//           key={index}
+//           src={image}
+//           alt={`Slide ${index}`}
+//           className={`absolute top-0 left-0 w-full h-full object-contain md:object-cover transition-opacity duration-1000 transform md:scale-85 ${index === currentImageIndex ? 'opacity-100 z-10' : 'opacity-0 z-0'
+//             } ${isInitialLoad
+//               ? 'animate-fade-in'
+//               : isTransitioning
+//                 ? index === currentImageIndex
+//                   ? 'animate-fade-in'
+//                   : 'opacity-0'
+//                 : ''
+//             }`}
+//           onAnimationEnd={() => setIsTransitioning(false)}
+//         />
+//       ))}
+//       <div className="absolute inset-0 flex items-center justify-between p-4">
+//         <button
+//           onClick={handlePrevClick}
+//           className="text-white bg-black bg-opacity-50 rounded-full p-2 z-20"
+//         >
+//           <FaArrowLeft size={30} />
+//         </button>
+//         <button
+//           onClick={handleNextClick}
+//           className="text-white bg-black bg-opacity-50 rounded-full p-2 z-20"
+//         >
+//           <FaArrowRight size={30} />
+//         </button>
+//       </div>
+//     </div>
+//   );
+// };
+
+
+
+const desktop = [Homed, Homed1, Homed2, Homed3];
+const mobile = [Homem, Homem1, Homem2, Homem3];
 
 const LandingPage = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [prevImageIndex, setPrevImageIndex] = useState(0);
   const [isInitialLoad, setIsInitialLoad] = useState(true);
   const [isTransitioning, setIsTransitioning] = useState(false);
+  const [images, setImages] = useState(window.innerWidth < 768 ? mobile : desktop);
 
   useEffect(() => {
+    const updateImages = () => {
+      if (window.innerWidth < 768) {
+        setImages(mobile);
+      } else {
+        setImages(desktop);
+      }
+    };
+
+    updateImages(); // Initial check
+
+    window.addEventListener('resize', updateImages);
+    return () => window.removeEventListener('resize', updateImages);
+  }, []);
+
+  useEffect(() => {
+    console.log('Current images:', images); // Log images
     const interval = setInterval(() => {
       setIsTransitioning(true);
       setPrevImageIndex(currentImageIndex);
@@ -216,7 +315,7 @@ const LandingPage = () => {
     }, 5000);
 
     return () => clearInterval(interval);
-  }, [currentImageIndex]);
+  }, [currentImageIndex, images.length]);
 
   const handlePrevClick = () => {
     setIsTransitioning(true);
@@ -268,7 +367,6 @@ const LandingPage = () => {
     </div>
   );
 };
-
 
 
 
