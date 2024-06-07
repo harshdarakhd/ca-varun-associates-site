@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.030115d7.css",
-    "main.js": "/static/js/main.d92a5ca1.js",
+    "main.css": "/static/css/main.d293a253.css",
+    "main.js": "/static/js/main.fa172648.js",
     "static/media/Audit.jpg": "/static/media/Audit.73ec7efeab5c7f4fdcdf.jpg",
     "static/media/IncomeTaxReturn.jpg": "/static/media/IncomeTaxReturn.6755cc8229e4cd596061.jpg",
     "static/media/BusinessRegistration.jpg": "/static/media/BusinessRegistration.2b9b97cb9afa543fed04.jpg",
@@ -9,11 +9,19 @@
     "static/media/BusinessSupport.jpg": "/static/media/BusinessSupport.98a12185e24800899345.jpg",
     "static/media/RiskAdvisory.jpg": "/static/media/RiskAdvisory.14b8e7121808c60ab202.jpg",
     "static/media/Home3.png": "/static/media/Home3.76b6bb4987eab76734c6.png",
+    "static/media/Image3desktop.jpeg": "/static/media/Image3desktop.4e5d9f7ce88beb2c7035.jpeg",
+    "static/media/Image3mobile.jpeg": "/static/media/Image3mobile.132651f44dc923dc1b68.jpeg",
     "static/media/Home4.png": "/static/media/Home4.dd4a2346d7d3571524a4.png",
+    "static/media/Image2desktop.jpeg": "/static/media/Image2desktop.edf5be3aaea6609f9ca0.jpeg",
+    "static/media/Image1desktop.jpeg": "/static/media/Image1desktop.7ffd8a45a2002abe5dc2.jpeg",
+    "static/media/Image2mobile.jpeg": "/static/media/Image2mobile.c232d70fca48cf154c78.jpeg",
     "static/media/VarunD.png": "/static/media/VarunD.dfeb0296e8b8995827e2.png",
     "static/media/JayeshA.png": "/static/media/JayeshA.76f45c93f34799e2085e.png",
+    "static/media/Image4desktop.jpeg": "/static/media/Image4desktop.2b50354736bab7ad047d.jpeg",
     "static/media/Krishna.png": "/static/media/Krishna.92ffda7fb0df095f5cf2.png",
+    "static/media/Image4mobile.jpeg": "/static/media/Image4mobile.66c2caf89fbff3db0c20.jpeg",
     "static/media/GST.png": "/static/media/GST.dd8e4d5eaed979e6a23f.png",
+    "static/media/Image1mobile.jpeg": "/static/media/Image1mobile.97802ac78503ce76bb1a.jpeg",
     "static/media/DirectTax.png": "/static/media/DirectTax.fceaada87af8b9ad14ca.png",
     "static/media/contact.png": "/static/media/contact.5c83a6f90e1be1fd27cc.png",
     "static/media/Manufacturing.png": "/static/media/Manufacturing.f6ca1c53887b6e09aab7.png",
@@ -27,11 +35,11 @@
     "static/media/FMCG.png": "/static/media/FMCG.5cf09778c39bcd7804d8.png",
     "static/media/CA_logo.png": "/static/media/CA_logo.c4c26b2d2d2f4cb4577d.png",
     "index.html": "/index.html",
-    "main.030115d7.css.map": "/static/css/main.030115d7.css.map",
-    "main.d92a5ca1.js.map": "/static/js/main.d92a5ca1.js.map"
+    "main.d293a253.css.map": "/static/css/main.d293a253.css.map",
+    "main.fa172648.js.map": "/static/js/main.fa172648.js.map"
   },
   "entrypoints": [
-    "static/css/main.030115d7.css",
-    "static/js/main.d92a5ca1.js"
+    "static/css/main.d293a253.css",
+    "static/js/main.fa172648.js"
   ]
 }
