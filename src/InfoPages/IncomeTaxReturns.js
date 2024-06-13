@@ -425,20 +425,20 @@ function IncomeTaxReturns() {
   });
 
   const [paymentLinks, setPaymentLinks] = useState({
-    link1: 'https://rzp.io/i/HB7hErnRHe',
-    link2: 'https://rzp.io/i/yGJyJiS88',
-    link3: 'https://rzp.io/i/sWjJP0mJ2',
-    link4: 'https://rzp.io/i/5iJFg8pQB',
-    link5: 'https://rzp.io/i/KpjXk8KJ',
+    link1: 'https://rzp.io/l/vZF74psmt8',
+    link2: 'https://rzp.io/l/1h5hJ02cx',
+    link3: 'https://rzp.io/l/5ATVEW8',
+    link4: 'https://rzp.io/l/oIwwYOU3N',
+    link5: 'https://rzp.io/l/TpGqx2hY',
   });
 
   const validCoupon = "ITADAL24";
   const discountedLinks = {
     link1: 'https://rzp.io/i/HB7hErnRHe',
-    link2: 'https://rzp.io/i/ZxgbYGiv',
-    link3: 'https://rzp.io/i/Ka5LYIWP8',
-    link4: 'https://rzp.io/i/MNYosNly',
-    link5: 'https://rzp.io/i/t9Ls29Fut',
+    link2: 'https://rzp.io/l/gJEWFXXcQ',
+    link3: 'https://rzp.io/l/DTgv4KqkWr',
+    link4: 'https://rzp.io/l/ddvNTSqFpe',
+    link5: 'https://rzp.io/l/yQPuUJhw9',
   };
 
   const [showModal, setShowModal] = useState(false);
